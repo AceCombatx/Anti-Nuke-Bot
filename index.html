@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Protection Bot - The Ultimate Server Security</title>
+    <title>Anti Nuke Bot - The Ultimate Discord Server Security</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +14,8 @@
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <img src="images/logo.png" alt="Protection Bot Logo">
-                <h1>Protection Bot</h1>
+                <img src="images/logo.png" alt="Anti Nuke Bot Logo">
+                <h1>Anti Nuke Bot</h1>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -26,6 +26,11 @@
                     <li><a href="#support">Support</a></li>
                 </ul>
             </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="toggle-ball"></div>
+            </div>
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -40,6 +45,14 @@
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#support">Support</a></li>
         </ul>
+        <div class="mobile-theme-toggle">
+            <span>Dark Mode</span>
+            <div class="theme-toggle mobile">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div>
     </div>
 
     <section class="hero">
@@ -47,12 +60,17 @@
             <h1>The Ultimate Protection for Your Discord Server</h1>
             <p>Prevent raids, nukes, spam, and more with our advanced security bot</p>
             <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Invite Bot</a>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1317483934879055992" class="btn btn-primary">
+                    <i class="fab fa-discord"></i> Invite Bot
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-shield-alt"></i> Learn More
+                </a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="images/hero-image.png" alt="Discord Protection Bot">
+            <img src="images/hero-image.png" alt="Anti Nuke Bot">
+            <div class="hero-glow"></div>
         </div>
     </section>
 
@@ -60,6 +78,9 @@
         <div class="section-header">
             <h2>Powerful Protection Features</h2>
             <p>Keep your server safe with our comprehensive security tools</p>
+            <div class="section-divider">
+                <span><i class="fas fa-shield-alt"></i></span>
+            </div>
         </div>
 
         <div class="features-grid">
@@ -121,8 +142,11 @@
 
     <section class="why-choose">
         <div class="section-header">
-            <h2>Why Choose Protection Bot?</h2>
+            <h2>Why Choose Anti Nuke Bot?</h2>
             <p>The most comprehensive security solution for Discord</p>
+            <div class="section-divider">
+                <span><i class="fas fa-check-circle"></i></span>
+            </div>
         </div>
 
         <div class="why-choose-content">
@@ -150,6 +174,7 @@
             </div>
             <div class="why-choose-image">
                 <img src="images/security.png" alt="Server Security">
+                <div class="image-glow"></div>
             </div>
         </div>
     </section>
@@ -157,7 +182,10 @@
     <section id="setup" class="setup">
         <div class="section-header">
             <h2>Getting Started</h2>
-            <p>Set up Protection Bot in your server in just a few minutes</p>
+            <p>Set up Anti Nuke Bot in your server in just a few minutes</p>
+            <div class="section-divider">
+                <span><i class="fas fa-rocket"></i></span>
+            </div>
         </div>
 
         <div class="setup-steps">
@@ -165,8 +193,10 @@
                 <div class="step-number">1</div>
                 <div class="step-content">
                     <h3>Invite the Bot</h3>
-                    <p>Click the "Invite Bot" button to add Protection Bot to your server</p>
-                    <a href="#" class="btn btn-primary">Invite Bot</a>
+                    <p>Click the "Invite Bot" button to add Anti Nuke Bot to your server</p>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1317483934879055992" class="btn btn-primary">
+                        <i class="fab fa-discord"></i> Invite Bot
+                    </a>
                 </div>
             </div>
 
@@ -211,6 +241,9 @@
         <div class="section-header">
             <h2>Anti-Nuke Protection</h2>
             <p>Prevent malicious users from destroying your server</p>
+            <div class="section-divider">
+                <span><i class="fas fa-shield-alt"></i></span>
+            </div>
         </div>
 
         <div class="feature-detail-content">
@@ -250,6 +283,7 @@
             </div>
             <div class="feature-detail-image">
                 <img src="images/anti-nuke.png" alt="Anti-Nuke Protection">
+                <div class="image-glow"></div>
             </div>
         </div>
     </section>
@@ -258,11 +292,15 @@
         <div class="section-header">
             <h2>Anti-Raid Protection</h2>
             <p>Stop coordinated attacks on your server</p>
+            <div class="section-divider">
+                <span><i class="fas fa-user-slash"></i></span>
+            </div>
         </div>
 
         <div class="feature-detail-content">
             <div class="feature-detail-image">
                 <img src="images/anti-raid.png" alt="Anti-Raid Protection">
+                <div class="image-glow"></div>
             </div>
             <div class="feature-detail-text">
                 <h3>How It Works</h3>
@@ -318,6 +356,9 @@
         <div class="section-header">
             <h2>Anti-Spam Protection</h2>
             <p>Keep your channels clean and readable</p>
+            <div class="section-divider">
+                <span><i class="fas fa-comment-slash"></i></span>
+            </div>
         </div>
 
         <div class="feature-detail-content">
@@ -382,6 +423,7 @@
             </div>
             <div class="feature-detail-image">
                 <img src="images/anti-spam.png" alt="Anti-Spam Protection">
+                <div class="image-glow"></div>
             </div>
         </div>
     </section>
@@ -390,11 +432,15 @@
         <div class="section-header">
             <h2>Server Lockdown</h2>
             <p>Emergency protection for critical situations</p>
+            <div class="section-divider">
+                <span><i class="fas fa-lock"></i></span>
+            </div>
         </div>
 
         <div class="feature-detail-content">
             <div class="feature-detail-image">
                 <img src="images/lockdown.png" alt="Server Lockdown">
+                <div class="image-glow"></div>
             </div>
             <div class="feature-detail-text">
                 <h3>How It Works</h3>
@@ -433,6 +479,9 @@
         <div class="section-header">
             <h2>Enhanced Logging</h2>
             <p>Keep track of everything happening in your server</p>
+            <div class="section-divider">
+                <span><i class="fas fa-clipboard-list"></i></span>
+            </div>
         </div>
 
         <div class="feature-detail-content">
@@ -467,6 +516,7 @@
             </div>
             <div class="feature-detail-image">
                 <img src="images/logging.png" alt="Enhanced Logging">
+                <div class="image-glow"></div>
             </div>
         </div>
     </section>
@@ -475,15 +525,19 @@
         <div class="section-header">
             <h2>Full Customization</h2>
             <p>Tailor the bot to your server's specific needs</p>
+            <div class="section-divider">
+                <span><i class="fas fa-sliders-h"></i></span>
+            </div>
         </div>
 
         <div class="feature-detail-content">
             <div class="feature-detail-image">
                 <img src="images/customization.png" alt="Customization">
+                <div class="image-glow"></div>
             </div>
             <div class="feature-detail-text">
                 <h3>Flexible Configuration</h3>
-                <p>Protection Bot is designed to be fully customizable, allowing you to configure every aspect of its behavior to suit your server's specific needs.</p>
+                <p>Anti Nuke Bot is designed to be fully customizable, allowing you to configure every aspect of its behavior to suit your server's specific needs.</p>
                 
                 <h3>Configuration Commands</h3>
                 <ul>
@@ -523,7 +577,10 @@
     <section id="commands" class="commands">
         <div class="section-header">
             <h2>Command Reference</h2>
-            <p>All the commands you need to manage Protection Bot</p>
+            <p>All the commands you need to manage Anti Nuke Bot</p>
+            <div class="section-divider">
+                <span><i class="fas fa-terminal"></i></span>
+            </div>
         </div>
 
         <div class="commands-container">
@@ -600,7 +657,10 @@
     <section id="faq" class="faq">
         <div class="section-header">
             <h2>Frequently Asked Questions</h2>
-            <p>Common questions about Protection Bot</p>
+            <p>Common questions about Anti Nuke Bot</p>
+            <div class="section-divider">
+                <span><i class="fas fa-question-circle"></i></span>
+            </div>
         </div>
 
         <div class="faq-container">
@@ -620,7 +680,7 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Protection Bot needs the following permissions to function properly:</p>
+                    <p>Anti Nuke Bot needs the following permissions to function properly:</p>
                     <ul>
                         <li>View Channels - To monitor server activity</li>
                         <li>Manage Channels - To lock channels during lockdown</li>
@@ -668,7 +728,7 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, Protection Bot can be used on multiple servers simultaneously. Each server has its own independent configuration, so you can customize the bot differently for each server based on their specific needs.</p>
+                    <p>Yes, Anti Nuke Bot can be used on multiple servers simultaneously. Each server has its own independent configuration, so you can customize the bot differently for each server based on their specific needs.</p>
                 </div>
             </div>
 
@@ -688,7 +748,7 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Currently, all features of Protection Bot are available for free. We may introduce premium features in the future, but our goal is to keep essential security features accessible to everyone.</p>
+                    <p>Currently, all features of Anti Nuke Bot are available for free. We may introduce premium features in the future, but our goal is to keep essential security features accessible to everyone.</p>
                 </div>
             </div>
         </div>
@@ -697,7 +757,10 @@
     <section id="support" class="support">
         <div class="section-header">
             <h2>Support</h2>
-            <p>Get help with Protection Bot</p>
+            <p>Get help with Anti Nuke Bot</p>
+            <div class="section-divider">
+                <span><i class="fas fa-headset"></i></span>
+            </div>
         </div>
 
         <div class="support-options">
@@ -707,7 +770,9 @@
                 </div>
                 <h3>Support Server</h3>
                 <p>Join our Discord server for help from our team and community</p>
-                <a href="#" class="btn btn-primary">Join Support Server</a>
+                <a href="https://discord.gg/3P5zKB9MZp" class="btn btn-primary">
+                    <i class="fab fa-discord"></i> Join Support Server
+                </a>
             </div>
 
             <div class="support-option">
@@ -716,16 +781,9 @@
                 </div>
                 <h3>Documentation</h3>
                 <p>Read our detailed documentation for in-depth information</p>
-                <a href="#" class="btn btn-secondary">View Documentation</a>
-            </div>
-
-            <div class="support-option">
-                <div class="support-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <h3>Email Support</h3>
-                <p>Contact our support team directly via email</p>
-                <a href="mailto:support@protectionbot.com" class="btn btn-secondary">Email Support</a>
+                <a href="#" class="btn btn-secondary">
+                    <i class="fas fa-book-open"></i> View Documentation
+                </a>
             </div>
         </div>
     </section>
@@ -733,16 +791,19 @@
     <section class="cta">
         <div class="cta-content">
             <h2>Ready to Secure Your Server?</h2>
-            <p>Add Protection Bot to your Discord server today and keep your community safe</p>
-            <a href="#" class="btn btn-primary">Invite Bot</a>
+            <p>Add Anti Nuke Bot to your Discord server today and keep your community safe</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1317483934879055992" class="btn btn-primary">
+                <i class="fab fa-discord"></i> Invite Bot
+            </a>
+            <div class="cta-particles"></div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/logo.png" alt="Protection Bot Logo">
-                <h2>Protection Bot</h2>
+                <img src="images/logo.png" alt="Anti Nuke Bot Logo">
+                <h2>Anti Nuke Bot</h2>
             </div>
             <div class="footer-links">
                 <div class="footer-links-column">
@@ -761,30 +822,26 @@
                         <li><a href="#commands">Commands</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#support">Support</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Status</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-column">
                     <h3>Legal</h3>
                     <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-column">
                     <h3>Connect</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://discord.gg/3P5zKB9MZp"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Protection Bot. All rights reserved.</p>
+            <p>&copy; 2025 Anti Nuke Bot. All rights reserved.</p>
         </div>
     </footer>
 

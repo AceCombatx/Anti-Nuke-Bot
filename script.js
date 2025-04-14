@@ -1,4 +1,42 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Theme toggle functionality
+    const themeToggle = document.querySelectorAll('.theme-toggle');
+    const body = document.documentElement;
+    
+    // Check for saved theme preference or use default
+    const savedTheme = localStorage.getItem('theme') || 'dark-mode';
+    body.className = savedTheme;
+    
+    // Update toggle position based on current theme
+    updateTogglePosition();
+    
+    // Add click event to all theme toggles
+    themeToggle.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light-mode');
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark-mode');
+            }
+            updateTogglePosition();
+        });
+    });
+    
+    function updateTogglePosition() {
+        const toggleBalls = document.querySelectorAll('.toggle-ball');
+        toggleBalls.forEach(ball => {
+            if (body.classList.contains('dark-mode')) {
+                ball.style.transform = 'translateX(0)';
+            } else {
+                ball.style.transform = 'translateX(24px)';
+            }
+        });
+    }
+
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -56,12 +94,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sticky header
     const header = document.querySelector('.header');
     const headerHeight = header.offsetHeight;
-    
+
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
-            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            header.classList.add('sticky');
         } else {
-            header.style.boxShadow = 'none';
+            header.classList.remove('sticky');
         }
     });
 
@@ -72,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Animate elements on scroll
     const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.feature-card, .setup-step, .feature-detail-content, .support-option');
+        const elements = document.querySelectorAll('.feature-card, .setup-step, .feature-detail-content, .support-option, .why-choose-item');
         
         elements.forEach(element => {
             const elementPosition = element.getBoundingClientRect().top;
@@ -83,16 +121,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     };
-    
+
     // Run animation check on load and scroll
     window.addEventListener('load', animateOnScroll);
     window.addEventListener('scroll', animateOnScroll);
-    
+
     // Add animated class to feature cards on load
     document.querySelectorAll('.feature-card').forEach(card => {
         card.classList.add('animated');
     });
-    
+
     // Copy code blocks to clipboard
     const codeBlocks = document.querySelectorAll('.code-block code');
     codeBlocks.forEach(block => {
@@ -112,51 +150,34 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+    
+    // Particle animation for CTA section
+    const ctaParticles = document.querySelector('.cta-particles');
+    if (ctaParticles) {
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            
+            // Random position, size, and animation delay
+            const size = Math.random() * 10 + 5;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            particle.style.animationDelay = `${Math.random() * 5}s`;
+            
+            ctaParticles.appendChild(particle);
+        }
+    }
+    
+    // Glow effect for hero and feature images
+    const glowElements = document.querySelectorAll('.hero-glow, .image-glow');
+    glowElements.forEach(glow => {
+        glow.style.opacity = '0.7';
+        
+        setInterval(() => {
+            const newOpacity = 0.5 + Math.random() * 0.5;
+            glow.style.opacity = newOpacity.toString();
+        }, 2000);
+    });
 });
-
-// Add CSS for the copy tooltip
-document.head.insertAdjacentHTML('beforeend', `
-    <style>
-        .code-block {
-            position: relative;
-            cursor: pointer;
-        }
-        
-        .copy-tooltip {
-            position: absolute;
-            top: -30px;
-            right: 10px;
-            background-color: var(--success-color);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 12px;
-            animation: fadeIn 0.3s, fadeOut 0.3s 1.7s;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes fadeOut {
-            from { opacity: 1; }
-            to { opacity: 0; }
-        }
-        
-        .animated {
-            animation: fadeInUp 0.6s ease-out forwards;
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-`);

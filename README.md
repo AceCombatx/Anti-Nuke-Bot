@@ -10,7 +10,7 @@ All within Discord.
 
 Anti-Nuke Bot is a next-gen Discord protection bot built to shield your server from dangerous exploits, mass destruction attacks, and disruptive users.  
 
-It works silently behind the scenes to stop nukes, prevent raids, block spam, and maintain order — so you don’t have to lift a finger.  
+It works silently behind the scenes to stop nukes, prevent raids, block spam, and maintain order so you don’t have to lift a finger.  
 
 From intelligent threat detection to customizable punishments and detailed logs, Anti-Nuke Bot is your all-in-one defense system.
 
@@ -50,7 +50,7 @@ Get alerts when users are banned, roles are deleted, or suspicious actions occur
   
 
 🔹 **Per-Server Configuration**  
-Each server has its own settings — fully configurable with slash commands like  
+Each server has its own settings. Fully configurable with slash commands like  
 `/antinuke_config`, `/antiraid_config`, and more.
 
   

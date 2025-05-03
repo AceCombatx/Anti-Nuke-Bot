@@ -108,7 +108,7 @@ Whether you’re running a small community or managing a 10k+ server, Anti-Nuke 
 
 🛠️ **How To Get Started**
 
-1. Use `/antinuke_config` to set up your protection levels  
+1. Use `/antinuke-config` to set up your protection levels  
 
 2. Add trusted users with `/whitelist add`  
 

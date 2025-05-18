@@ -102,7 +102,7 @@
                     <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3>Anti-Nuke Protection</h3>
-                <p>Prevent mass channel and role deletions by automatically detecting and punishing malicious actions</p>
+                <p>Prevent mass channel/role deletions, creations, and unauthorized changes by automatically detecting and reverting malicious actions</p>
                 <a href="#anti-nuke" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -262,11 +262,14 @@
         <div class="feature-detail-content">
             <div class="feature-detail-text">
                 <h3>How It Works</h3>
-                <p>Anti-Nuke protection monitors your server for suspicious activities like mass channel or role deletions. When someone tries to "nuke" your server by deleting multiple channels or roles in a short time, the bot will automatically detect this behavior and take action.</p>
+                <p>Anti-Nuke protection monitors your server for suspicious activities like mass channel or role deletions, creations, name changes, and server setting modifications. When someone tries to "nuke" your server or make unauthorized changes, the bot will automatically detect this behavior, take action against the offender, and revert any unauthorized changes.</p>
                 
                 <h3>Key Features</h3>
                 <ul>
-                    <li>Monitors channel deletions, role deletions, mass bans, and webhook creations</li>
+                    <li>Monitors channel and role deletions, creations, and name changes</li>
+                    <li>Protects against server name and icon changes</li>
+                    <li>Automatically reverts unauthorized changes</li>
+                    <li>Monitors mass bans and webhook creations</li>
                     <li>Configurable thresholds to determine what counts as suspicious activity</li>
                     <li>Customizable punishments (ban, kick, or mute)</li>
                     <li>Automatic logging of all detected nuke attempts</li>
@@ -274,7 +277,7 @@
                 </ul>
 
                 <h3>Configuration</h3>
-                <p>Use the <code>/antinuke_config</code> command to view and modify your Anti-Nuke settings:</p>
+                <p>Use the <code>/antinuke-config</code> command to view and modify your Anti-Nuke settings:</p>
                 <div class="config-options">
                     <div class="config-option">
                         <span>Enable/Disable:</span>
@@ -282,11 +285,23 @@
                     </div>
                     <div class="config-option">
                         <span>Channel Delete Threshold:</span>
-                        <code>/antinuke-config channel_threshold:3</code>
+                        <code>/antinuke-config channel_delete_threshold:3</code>
                     </div>
                     <div class="config-option">
                         <span>Role Delete Threshold:</span>
-                        <code>/antinuke-config role_threshold:3</code>
+                        <code>/antinuke-config role_delete_threshold:3</code>
+                    </div>
+                    <div class="config-option">
+                        <span>Channel Create Threshold:</span>
+                        <code>/antinuke-config channel_create_threshold:3</code>
+                    </div>
+                    <div class="config-option">
+                        <span>Role Create Threshold:</span>
+                        <code>/antinuke-config role_create_threshold:3</code>
+                    </div>
+                    <div class="config-option">
+                        <span>Name Change Threshold:</span>
+                        <code>/antinuke-config name_change_threshold:3</code>
                     </div>
                     <div class="config-option">
                         <span>Punishment:</span>
@@ -507,7 +522,8 @@
                     <li>Security events (nuke attempts, raids, spam)</li>
                     <li>Member joins and leaves</li>
                     <li>Message edits and deletions</li>
-                    <li>Channel and role creations and deletions</li>
+                    <li>Channel and role creations, deletions, and name changes</li>
+                    <li>Server name and icon changes</li>
                     <li>Member bans and unbans</li>
                     <li>Server setting changes</li>
                     <li>Voice channel activity</li>

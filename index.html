@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anti Nuke Bot - The Ultimate Discord Server Security</title>
     <!-- Open Graph / Discord Embed -->
-<meta name="description" content="Powerful Discord bot to protect your server from nukes, raids, and spam with advanced security features.">
-<meta property="og:title" content="Anti Nuke Bot - The Ultimate Discord Server Security" />
-<meta property="og:description" content="Powerful Discord bot to protect your server from nukes, raids, and spam with advanced security features." />
-<meta property="og:url" content="https://anb.draftinc.xyz/privacy-policy.html" />
-<meta property="og:image" content="https://i.imgur.com/ehHTLBe.png" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Privacy Policy - Anti Nuke Bot" />
-<meta name="twitter:description" content="Powerful Discord bot to protect your server from nukes, raids, and spam with advanced security features." />
-<meta name="twitter:image" content="https://i.imgur.com/ehHTLBe.png" />
-<meta name="theme-color" content="#C59C59">
+    <meta name="description" content="Powerful Discord bot to protect your server from nukes, raids, and spam with advanced security features.">
+    <meta property="og:title" content="Anti Nuke Bot - The Ultimate Discord Server Security" />
+    <meta property="og:description" content="Powerful Discord bot to protect your server from nukes, raids, and spam with advanced security features." />
+    <meta property="og:url" content="https://anb.draftinc.xyz/" />
+    <meta property="og:image" content="https://i.imgur.com/ehHTLBe.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Anti Nuke Bot - Server Security" />
+    <meta name="twitter:description" content="Powerful Discord bot to protect your server from nukes, raids, and spam with advanced security features." />
+    <meta name="twitter:image" content="https://i.imgur.com/ehHTLBe.png" />
+    <meta name="theme-color" content="#C59C59">
     <link rel="icon" type="image/png" href="https://i.imgur.com/ehHTLBe.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -102,7 +102,7 @@
                     <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3>Anti-Nuke Protection</h3>
-                <p>Prevent mass channel/role deletions, creations, and unauthorized changes by automatically detecting and reverting malicious actions</p>
+                <p>Prevent mass channel/role deletions, creations, name changes, and server image changes by automatically detecting and reverting malicious actions</p>
                 <a href="#anti-nuke" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -120,7 +120,7 @@
                     <i class="fas fa-comment-slash"></i>
                 </div>
                 <h3>Anti-Spam Protection</h3>
-                <p>Prevent message spam and mass mentions with configurable thresholds and punishments</p>
+                <p>Prevent message spam and mass mentions with configurable thresholds and punishments, plus automatic spam message deletion</p>
                 <a href="#anti-spam" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -147,7 +147,7 @@
                     <i class="fas fa-sliders-h"></i>
                 </div>
                 <h3>Fully Customizable</h3>
-                <p>Configure every aspect of the bot to suit your server's specific needs</p>
+                <p>Configure every aspect of the bot to suit your server's specific needs with easy backups</p>
                 <a href="#customization" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
@@ -183,6 +183,10 @@
                 <div class="why-choose-item">
                     <i class="fas fa-check-circle"></i>
                     <p>Trusted by thousands of servers to provide reliable protection</p>
+                </div>
+                <div class="why-choose-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Comprehensive help commands to assist with setup and troubleshooting</p>
                 </div>
             </div>
             <div class="why-choose-image">
@@ -238,14 +242,36 @@
             <div class="setup-step">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3>Customize Protection</h3>
-                    <p>Configure each protection module to suit your server's needs</p>
+                    <h3>Enable Protection Features</h3>
+                    <p>Configure and enable each protection module to suit your server's needs</p>
                     <div class="code-block">
-                        <code>/antinuke-config</code>
-                        <code>/antiraid-config</code>
-                        <code>/antispam-config</code>
+                        <code>/antinuke-config enabled:true</code>
+                        <code>/antiraid-config enabled:true</code>
+                        <code>/antispam-config enabled:true</code>
                     </div>
                 </div>
+            </div>
+
+            <div class="setup-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Check Protection Status</h3>
+                    <p>Verify that all protection features are properly set up and active</p>
+                    <div class="code-block">
+                        <code>/protection-status</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="setup-note">
+            <div class="note-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="note-content">
+                <h4>Important!</h4>
+                <p>All protection features require proper setup before they'll activate. Make sure you've completed steps 2, 3, and 4 for each protection feature you want to use.</p>
+                <p>Use <code>/protection-status</code> to see which features are ready to use and which ones need more setup.</p>
             </div>
         </div>
     </section>
@@ -267,7 +293,7 @@
                 <h3>Key Features</h3>
                 <ul>
                     <li>Monitors channel and role deletions, creations, and name changes</li>
-                    <li>Protects against server name and icon changes</li>
+                    <li>Protects against server name and icon/banner changes</li>
                     <li>Automatically reverts unauthorized changes</li>
                     <li>Monitors mass bans and webhook creations</li>
                     <li>Configurable thresholds to determine what counts as suspicious activity</li>
@@ -281,7 +307,7 @@
                 <div class="config-options">
                     <div class="config-option">
                         <span>Enable/Disable:</span>
-                        <code>/antinuke-config enabled:Enable</code>
+                        <code>/antinuke-config enabled:true</code>
                     </div>
                     <div class="config-option">
                         <span>Channel Delete Threshold:</span>
@@ -305,8 +331,13 @@
                     </div>
                     <div class="config-option">
                         <span>Punishment:</span>
-                        <code>/antinuke-config punishment:Ban</code>
+                        <code>/antinuke-config punishment:ban</code>
                     </div>
+                </div>
+
+                <div class="feature-detail-help">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Need help with anti-nuke setup? Use <code>/nuke-help</code> for a detailed guide.</p>
                 </div>
             </div>
             <div class="feature-detail-image">
@@ -340,7 +371,7 @@
                     <li>Automatic raid mode activation when suspicious join activity is detected</li>
                     <li>Manual raid mode toggle for when you anticipate or suspect a raid</li>
                     <li>Configurable join rate thresholds and time windows</li>
-                    <li>Customizable punishments for raiders (ban or kick)</li>
+                    <li>Customizable punishments for raiders (ban, kick, or mute)</li>
                 </ul>
 
                 <h3>Configuration</h3>
@@ -348,7 +379,7 @@
                 <div class="config-options">
                     <div class="config-option">
                         <span>Enable/Disable:</span>
-                        <code>/antiraid-config enabled:Enable</code>
+                        <code>/antiraid-config enabled:true</code>
                     </div>
                     <div class="config-option">
                         <span>Join Rate Threshold:</span>
@@ -360,21 +391,26 @@
                     </div>
                     <div class="config-option">
                         <span>Punishment:</span>
-                        <code>/antiraid-config punishment:Kick</code>
+                        <code>/antiraid-config punishment:kick</code>
                     </div>
                 </div>
 
                 <h3>Manual Raid Mode</h3>
-                <p>You can manually activate or deactivate raid mode with the <code>/raid_mode</code> command:</p>
+                <p>You can manually activate or deactivate raid mode with the <code>/raid-mode</code> command:</p>
                 <div class="config-options">
                     <div class="config-option">
                         <span>Activate Raid Mode:</span>
-                        <code>/raid-mode action:Activate</code>
+                        <code>/raid-mode action:activate</code>
                     </div>
                     <div class="config-option">
                         <span>Deactivate Raid Mode:</span>
-                        <code>/raid-mode action:Deactivate</code>
+                        <code>/raid-mode action:deactivate</code>
                     </div>
+                </div>
+
+                <div class="feature-detail-help">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Need help with anti-raid setup? Use <code>/raid-help</code> for a detailed guide.</p>
                 </div>
             </div>
         </div>
@@ -392,12 +428,13 @@
         <div class="feature-detail-content">
             <div class="feature-detail-text">
                 <h3>How It Works</h3>
-                <p>Anti-Spam protection monitors the rate at which users send messages and the number of mentions in those messages. If a user sends too many messages too quickly or includes too many mentions, the bot will take action to prevent spam.</p>
+                <p>Anti-Spam protection monitors the rate at which users send messages and the number of mentions in those messages. If a user sends too many messages too quickly or includes too many mentions, the bot will take action to prevent spam and automatically delete the spam messages.</p>
                 
                 <h3>Key Features</h3>
                 <ul>
                     <li>Message rate monitoring to prevent rapid-fire spam</li>
                     <li>Mass mention detection to prevent ping spam</li>
+                    <li>Automatic deletion of spam messages</li>
                     <li>Warning system for first-time offenders</li>
                     <li>Configurable thresholds and time windows</li>
                     <li>Customizable punishments (ban, kick, or mute)</li>
@@ -408,7 +445,7 @@
                 <div class="config-options">
                     <div class="config-option">
                         <span>Enable/Disable:</span>
-                        <code>/antispam-config enabled:Enable</code>
+                        <code>/antispam-config enabled:true</code>
                     </div>
                     <div class="config-option">
                         <span>Message Threshold:</span>
@@ -420,7 +457,7 @@
                     </div>
                     <div class="config-option">
                         <span>Punishment:</span>
-                        <code>/antispam-config punishment:Mute</code>
+                        <code>/antispam-config punishment:mute</code>
                     </div>
                     <div class="config-option">
                         <span>Mute Duration (minutes):</span>
@@ -433,7 +470,7 @@
                 <div class="config-options">
                     <div class="config-option">
                         <span>Enable/Disable:</span>
-                        <code>/antimention-config enabled:Enable</code>
+                        <code>/antimention-config enabled:true</code>
                     </div>
                     <div class="config-option">
                         <span>Mention Threshold:</span>
@@ -441,12 +478,17 @@
                     </div>
                     <div class="config-option">
                         <span>Punishment:</span>
-                        <code>/antimention-config punishment:Mute</code>
+                        <code>/antimention-config punishment:mute</code>
                     </div>
                     <div class="config-option">
                         <span>Mute Duration (minutes):</span>
-                        <code>/antimention_config mute_duration:5</code>
+                        <code>/antimention-config mute_duration:5</code>
                     </div>
+                </div>
+
+                <div class="feature-detail-help">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Need help with anti-spam setup? Use <code>/spam-help</code> for a detailed guide.</p>
                 </div>
             </div>
             <div class="feature-detail-image">
@@ -487,11 +529,11 @@
                 <div class="config-options">
                     <div class="config-option">
                         <span>Enable Lockdown:</span>
-                        <code>/lockdown action:Enable reason:Raid in progress</code>
+                        <code>/lockdown action:enable reason:Raid in progress</code>
                     </div>
                     <div class="config-option">
                         <span>Disable Lockdown:</span>
-                        <code>/lockdown action:Disable reason:Situation resolved</code>
+                        <code>/lockdown action:disable reason:Situation resolved</code>
                     </div>
                 </div>
 
@@ -542,6 +584,11 @@
                     <i class="fas fa-info-circle"></i>
                     <p>It's recommended to create a private channel for logs that only moderators can access.</p>
                 </div>
+                
+                <div class="note">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p><strong>Important:</strong> Setting up logging is REQUIRED for all protection features to work properly!</p>
+                </div>
             </div>
             <div class="feature-detail-image">
                 <img src="https://i.imgur.com/ehHTLBe.png" alt="Enhanced Logging">
@@ -583,11 +630,11 @@
                 <div class="config-options">
                     <div class="config-option">
                         <span>Create Backup:</span>
-                        <code>/backup</code>
+                        <code>/config-backup</code>
                     </div>
                     <div class="config-option">
                         <span>Restore from Backup:</span>
-                        <code>/restore [attach backup file]</code>
+                        <code>/config-restore [attach backup file]</code>
                     </div>
                 </div>
 
@@ -599,6 +646,66 @@
                         <code>/protection-status</code>
                     </div>
                 </div>
+                
+                <div class="feature-detail-help">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Need help with configuration? Use <code>/config-help</code> for a detailed guide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="help-system" class="feature-detail">
+        <div class="section-header">
+            <h2>Interactive Help System</h2>
+            <p>Get assistance whenever you need it</p>
+            <div class="section-divider">
+                <span><i class="fas fa-question-circle"></i></span>
+            </div>
+        </div>
+
+        <div class="feature-detail-content">
+            <div class="feature-detail-text">
+                <h3>Comprehensive Help Commands</h3>
+                <p>Anti Nuke Bot includes a variety of help commands to assist you with setup, configuration, and troubleshooting. Get detailed guidance right within Discord.</p>
+                
+                <h3>Available Help Commands</h3>
+                <ul>
+                    <li><code>/errors</code> - View common errors and their solutions</li>
+                    <li><code>/nuke-help</code> - Get help with anti-nuke configuration</li>
+                    <li><code>/spam-help</code> - Get help with anti-spam configuration</li>
+                    <li><code>/raid-help</code> - Get help with anti-raid configuration</li>
+                    <li><code>/config-help</code> - Get help with bot configuration and backup</li>
+                    <li><code>/features</code> - View all available protection features</li>
+                </ul>
+
+                <h3>Troubleshooting Made Easy</h3>
+                <p>The <code>/errors</code> command provides an interactive troubleshooting guide with categories for different types of issues:</p>
+                <ul>
+                    <li>General Bot Issues</li>
+                    <li>Setup & Configuration Issues</li>
+                    <li>Anti-Nuke Issues</li>
+                    <li>Anti-Spam Issues</li>
+                    <li>Anti-Raid & Lockdown Issues</li>
+                    <li>Backup & Configuration Issues</li>
+                </ul>
+                
+                <h3>Permission Checker</h3>
+                <p>Use the built-in permission checker to verify the bot has all the permissions it needs to function properly. This tool will:</p>
+                <ul>
+                    <li>Check critical permissions</li>
+                    <li>Verify role position</li>
+                    <li>Provide step-by-step instructions to fix any issues</li>
+                </ul>
+                
+                <div class="note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>All help commands are ephemeral, meaning only you can see the responses.</p>
+                </div>
+            </div>
+            <div class="feature-detail-image">
+                <img src="https://i.imgur.com/ehHTLBe.png" alt="Help System">
+                <div class="image-glow"></div>
             </div>
         </div>
     </section>
@@ -623,6 +730,10 @@
                     <div class="command-item">
                         <div class="command-name">/whitelist</div>
                         <div class="command-desc">Add or remove users from the configuration whitelist</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command-name">/protection-status</div>
+                        <div class="command-desc">View the current protection status for this server</div>
                     </div>
                 </div>
             </div>
@@ -660,10 +771,6 @@
                         <div class="command-name">/lockdown</div>
                         <div class="command-desc">Lock all channels to prevent messages during raids or attacks</div>
                     </div>
-                    <div class="command-item">
-                        <div class="command-name">/protection-status</div>
-                        <div class="command-desc">View the current protection status for this server</div>
-                    </div>
                 </div>
             </div>
 
@@ -671,12 +778,42 @@
                 <h3>Utility Commands</h3>
                 <div class="command-list">
                     <div class="command-item">
-                        <div class="command-name">/backup</div>
+                        <div class="command-name">/config-backup</div>
                         <div class="command-desc">Create a backup of server configurations</div>
                     </div>
                     <div class="command-item">
-                        <div class="command-name">/restore</div>
+                        <div class="command-name">/config-restore</div>
                         <div class="command-desc">Restore server configurations from a backup</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="command-category">
+                <h3>Help Commands</h3>
+                <div class="command-list">
+                    <div class="command-item">
+                        <div class="command-name">/errors</div>
+                        <div class="command-desc">View common errors and their solutions</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command-name">/nuke-help</div>
+                        <div class="command-desc">Get help with anti-nuke configuration</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command-name">/spam-help</div>
+                        <div class="command-desc">Get help with anti-spam configuration</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command-name">/raid-help</div>
+                        <div class="command-desc">Get help with anti-raid configuration</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command-name">/config-help</div>
+                        <div class="command-desc">Get help with bot configuration and backup</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command-name">/features</div>
+                        <div class="command-desc">View all available protection features</div>
                     </div>
                 </div>
             </div>
@@ -693,6 +830,22 @@
         </div>
 
         <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Why aren't the protection features working?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>All protection features require proper setup before they'll activate. Make sure you've:</p>
+                    <ol>
+                        <li>Set up logging with <code>/setup-logging #channel</code></li>
+                        <li>Added at least one admin to the whitelist with <code>/whitelist add @Admin</code></li>
+                        <li>Enabled the specific protection feature (e.g., <code>/antinuke-config enabled:true</code>)</li>
+                    </ol>
+                    <p>Use <code>/protection-status</code> to check which features are ready and which need more setup.</p>
+                </div>
+            </div>
+
             <div class="faq-item">
                 <div class="faq-question">
                     <h3>Who can configure the bot?</h3>
@@ -722,6 +875,7 @@
                         <li>Manage Messages - To delete spam messages</li>
                         <li>Read Message History - For logging and monitoring</li>
                     </ul>
+                    <p>Additionally, the bot's role should be positioned at the top of your server's role list to ensure it can manage all roles.</p>
                 </div>
             </div>
 
@@ -743,12 +897,30 @@
                 <div class="faq-answer">
                     <p>If your server is being raided, you should:</p>
                     <ol>
-                        <li>Activate raid mode with <code>/raid-mode action:Activate</code></li>
-                        <li>Enable server lockdown with <code>/lockdown action:Enable reason:Raid in progress</code></li>
+                        <li>Activate raid mode with <code>/raid-mode action:activate</code></li>
+                        <li>Enable server lockdown with <code>/lockdown action:enable reason:Raid in progress</code></li>
                         <li>Wait for the raid to subside</li>
-                        <li>Disable lockdown with <code>/lockdown action:Disable reason:Raid over</code></li>
-                        <li>Deactivate raid mode with <code>/raid-mode action:Deactivate</code></li>
+                        <li>Disable lockdown with <code>/lockdown action:disable reason:Raid over</code></li>
+                        <li>Deactivate raid mode with <code>/raid-mode action:deactivate</code></li>
                     </ol>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I fix common errors?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The bot includes a comprehensive error troubleshooting system. Use the <code>/errors</code> command to access an interactive guide for fixing common issues. This includes solutions for:</p>
+                    <ul>
+                        <li>Bot permission problems</li>
+                        <li>Setup and configuration issues</li>
+                        <li>Protection features not working</li>
+                        <li>Command errors</li>
+                        <li>And more</li>
+                    </ul>
+                    <p>You can also use specific help commands like <code>/nuke-help</code>, <code>/spam-help</code>, etc., for feature-specific guidance.</p>
                 </div>
             </div>
 
@@ -814,6 +986,19 @@
                 <a href="https://volarissolutions.gitbook.io/anti-nuke-bot" class="btn btn-secondary">
                     <i class="fas fa-book-open"></i> View Documentation
                 </a>
+            </div>
+
+            <div class="support-option">
+                <div class="support-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3>In-Bot Help</h3>
+                <p>Use our comprehensive help commands right in Discord</p>
+                <div class="code-block">
+                    <code>/errors</code>
+                    <code>/features</code>
+                    <code>/config-help</code>
+                </div>
             </div>
         </div>
     </section>

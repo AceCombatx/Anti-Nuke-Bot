@@ -327,253 +327,6 @@
         </div>
     </section>
 
-    <!-- Anti-Selfbot Section -->
-    <section id="anti-selfbot" class="feature-detail">
-        <div class="section-header">
-            <h2>Anti-Selfbot Detection</h2>
-            <p>Advanced behavioral analysis to detect and prevent automated accounts</p>
-            <div class="section-divider">
-                <span><i class="fas fa-robot"></i></span>
-            </div>
-        </div>
-
-        <div class="feature-detail-content">
-            <div class="feature-detail-text">
-                <h3>How It Works</h3>
-                <p>Anti-Selfbot detection uses advanced behavioral analysis to identify automated accounts (selfbots) that violate Discord's Terms of Service. The system analyzes message patterns, response times, activity consistency, and other behavioral indicators to build a risk profile for each user.</p>
-                
-                <h3>Detection Methods</h3>
-                <ul>
-                    <li>Message timing and pattern analysis</li>
-                    <li>Response speed monitoring for inhuman reaction times</li>
-                    <li>Activity consistency tracking (24/7 activity patterns)</li>
-                    <li>Command usage pattern recognition</li>
-                    <li>Behavioral anomaly detection</li>
-                    <li>Risk scoring system with configurable thresholds</li>
-                </ul>
-
-                <h3>Configuration</h3>
-                <p>Use the <code>/antiselfbot-config</code> command to configure selfbot detection:</p>
-                <div class="config-options">
-                    <div class="config-option">
-                        <span>Enable/Disable:</span>
-                        <code>/antiselfbot-config enabled:true</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Sensitivity Level:</span>
-                        <code>/antiselfbot-config sensitivity:medium</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Risk Threshold:</span>
-                        <code>/antiselfbot-config risk_threshold:75</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Punishment:</span>
-                        <code>/antiselfbot-config punishment:warn</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Proactive Scanning:</span>
-                        <code>/antiselfbot-config proactive_scan:true</code>
-                    </div>
-                </div>
-
-                <div class="feature-detail-help">
-                    <i class="fas fa-lightbulb"></i>
-                    <p>Need help with selfbot detection? Use <code>/selfbot-help</code> for detailed configuration guidance.</p>
-                </div>
-            </div>
-            <div class="feature-detail-image">
-                <img src="https://i.imgur.com/ehHTLBe.png" alt="Anti-Selfbot Detection">
-                <div class="image-glow"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Anti-Alt Section -->
-    <section id="anti-alt" class="feature-detail alt">
-        <div class="section-header">
-            <h2>Alt Account Detection</h2>
-            <p>Identify and manage alternative accounts with advanced detection algorithms</p>
-            <div class="section-divider">
-                <span><i class="fas fa-user-check"></i></span>
-            </div>
-        </div>
-
-        <div class="feature-detail-content">
-            <div class="feature-detail-image">
-                <img src="https://i.imgur.com/ehHTLBe.png" alt="Alt Account Detection">
-                <div class="image-glow"></div>
-            </div>
-            <div class="feature-detail-text">
-                <h3>How It Works</h3>
-                <p>Alt account detection identifies potential alternative accounts using multiple criteria including account age, username patterns, avatar similarity, and behavioral analysis. The system helps prevent ban evasion and maintains server integrity.</p>
-                
-                <h3>Detection Criteria</h3>
-                <ul>
-                    <li>Account age analysis with configurable minimum thresholds</li>
-                    <li>Username pattern and similarity detection</li>
-                    <li>Avatar and profile similarity checking</li>
-                    <li>Join pattern analysis for coordinated accounts</li>
-                    <li>Behavioral similarity assessment</li>
-                    <li>Risk assessment with multiple factors</li>
-                </ul>
-
-                <h3>Configuration</h3>
-                <p>Use the <code>/antialt-config</code> command to configure alt detection:</p>
-                <div class="config-options">
-                    <div class="config-option">
-                        <span>Enable/Disable:</span>
-                        <code>/antialt-config enabled:true</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Minimum Account Age:</span>
-                        <code>/antialt-config min_account_age:7</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Risk Threshold:</span>
-                        <code>/antialt-config risk_threshold:70</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Punishment:</span>
-                        <code>/antialt-config punishment:kick</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Verification Bypass:</span>
-                        <code>/antialt-config verification_bypass:true</code>
-                    </div>
-                </div>
-
-                <div class="feature-detail-help">
-                    <i class="fas fa-lightbulb"></i>
-                    <p>Need help with alt detection? Use <code>/alt-help</code> for detailed configuration guidance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Message Filter Section -->
-    <section id="message-filter" class="feature-detail">
-        <div class="section-header">
-            <h2>Advanced Message Filtering</h2>
-            <p>Comprehensive content filtering with custom rules and intelligent detection</p>
-            <div class="section-divider">
-                <span><i class="fas fa-filter"></i></span>
-            </div>
-        </div>
-
-        <div class="feature-detail-content">
-            <div class="feature-detail-text">
-                <h3>How It Works</h3>
-                <p>Advanced message filtering provides comprehensive content moderation with custom word lists, regex pattern support, invite link detection, and intelligent context analysis. The system includes escalating punishments and detailed logging.</p>
-                
-                <h3>Filtering Capabilities</h3>
-                <ul>
-                    <li>Custom word and phrase filtering with context awareness</li>
-                    <li>Regular expression (regex) pattern support</li>
-                    <li>Discord invite link detection and blocking</li>
-                    <li>URL and domain filtering with whitelist support</li>
-                    <li>Escalating punishment system for repeat offenders</li>
-                    <li>Bypass detection for creative spelling and special characters</li>
-                </ul>
-
-                <h3>Configuration</h3>
-                <p>Use the <code>/messagefilter-config</code> command to configure content filtering:</p>
-                <div class="config-options">
-                    <div class="config-option">
-                        <span>Enable/Disable:</span>
-                        <code>/messagefilter-config enabled:true</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Filter Level:</span>
-                        <code>/messagefilter-config filter_level:medium</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Block Invites:</span>
-                        <code>/messagefilter-config block_invites:true</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Block URLs:</span>
-                        <code>/messagefilter-config block_urls:true</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Punishment:</span>
-                        <code>/messagefilter-config punishment:warn</code>
-                    </div>
-                </div>
-
-                <div class="feature-detail-help">
-                    <i class="fas fa-lightbulb"></i>
-                    <p>Need help with message filtering? Use <code>/filter-help</code> for detailed configuration guidance.</p>
-                </div>
-            </div>
-            <div class="feature-detail-image">
-                <img src="https://i.imgur.com/ehHTLBe.png" alt="Message Filtering">
-                <div class="image-glow"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Updated existing sections with V5 features -->
-    <section id="anti-nuke" class="feature-detail alt">
-        <div class="section-header">
-            <h2>Anti-Nuke Protection</h2>
-            <p>Advanced protection against server destruction with automatic restoration</p>
-            <div class="section-divider">
-                <span><i class="fas fa-shield-alt"></i></span>
-            </div>
-        </div>
-
-        <div class="feature-detail-content">
-            <div class="feature-detail-image">
-                <img src="https://i.imgur.com/ehHTLBe.png" alt="Anti-Nuke Protection">
-                <div class="image-glow"></div>
-            </div>
-            <div class="feature-detail-text">
-                <h3>How It Works</h3>
-                <p>Anti-Nuke protection provides comprehensive monitoring of all administrative actions with real-time detection and automatic restoration capabilities. The system uses advanced algorithms to distinguish between legitimate administrative actions and malicious attempts.</p>
-                
-                <h3>Protection Coverage</h3>
-                <ul>
-                    <li>Channel and role deletion/creation monitoring with automatic restoration</li>
-                    <li>Server name, icon, and banner change protection</li>
-                    <li>Mass ban and kick detection with reversal capabilities</li>
-                    <li>Webhook creation and management monitoring</li>
-                    <li>Permission escalation detection and prevention</li>
-                    <li>Audit log integration for comprehensive tracking</li>
-                    <li>Configurable thresholds with intelligent adaptation</li>
-                    <li>Whitelist system with role-based permissions</li>
-                </ul>
-
-                <h3>Advanced Configuration</h3>
-                <p>Use the <code>/antinuke-config</code> command for comprehensive protection setup:</p>
-                <div class="config-options">
-                    <div class="config-option">
-                        <span>Enable Protection:</span>
-                        <code>/antinuke-config enabled:true</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Auto-Restore:</span>
-                        <code>/antinuke-config auto_restore:true</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Detection Sensitivity:</span>
-                        <code>/antinuke-config sensitivity:high</code>
-                    </div>
-                    <div class="config-option">
-                        <span>Punishment Level:</span>
-                        <code>/antinuke-config punishment:ban</code>
-                    </div>
-                </div>
-
-                <div class="feature-detail-help">
-                    <i class="fas fa-lightbulb"></i>
-                    <p>Need help with anti-nuke setup? Use <code>/nuke-help</code> for detailed configuration guidance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Continue with updated sections... -->
     <section id="commands" class="commands">
         <div class="section-header">
             <h2>Complete Command Reference</h2>
@@ -945,21 +698,43 @@
         </div>
 
         <div class="support-stats">
-            <div class="stat-item">
-                <div class="stat-number">99.9%</div>
-                <div class="stat-label">Uptime</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">&lt;5min</div>
-                <div class="stat-label">Avg Response Time</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">10,000+</div>
-                <div class="stat-label">Protected Servers</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Support Available</div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime Reliability</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">&lt;2min</div>
+                        <div class="stat-label">Response Time</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">5,000+</div>
+                        <div class="stat-label">Protected Servers</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

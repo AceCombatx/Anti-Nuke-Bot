@@ -102,7 +102,7 @@
                     <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3>Anti-Nuke Protection</h3>
-                <p>Advanced protection against server destruction with automatic restoration, configurable thresholds, and real-time monitoring of all administrative actions</p>
+                <p>Advanced protection against server destruction, monitoring channel/role deletion and creation, server name/image changes. Features automatic restoration of unauthorized changes, configurable thresholds, and real-time audit log monitoring. Includes Webhook, Invite, Emoji, and Sticker protection with faster burst detection for rapid attacks.</p>
                 <a href="#anti-nuke" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -111,7 +111,7 @@
                     <i class="fas fa-user-slash"></i>
                 </div>
                 <h3>Anti-Raid Protection</h3>
-                <p>Intelligent raid detection with pattern recognition, automatic lockdown capabilities, and alt account detection with configurable criteria</p>
+                <p>Intelligent raid detection based on join rate, account age, and suspicious join patterns. Features automatic response, manual raid mode control, server lockdown capabilities, and temporary verification level boosting during attacks.</p>
                 <a href="#anti-raid" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -120,7 +120,7 @@
                     <i class="fas fa-comment-slash"></i>
                 </div>
                 <h3>Anti-Spam Protection</h3>
-                <p>Advanced message filtering with rate limiting, mass mention detection, duplicate content filtering, and progressive punishment system</p>
+                <p>Comprehensive spam prevention with message rate limiting, mass mention detection, and duplicate content filtering. Includes protection against link, image, and emoji spam, with advanced message filtering using custom rules and a progressive punishment system. Features improved burst detection for rapid message and emoji spam.</p>
                 <a href="#anti-spam" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -129,7 +129,7 @@
                     <i class="fas fa-robot"></i>
                 </div>
                 <h3>Anti-Selfbot Detection</h3>
-                <p>Behavioral analysis to detect automated accounts with risk scoring, pattern recognition, and configurable sensitivity levels</p>
+                <p>Advanced behavioral analysis to detect automated accounts based on message patterns, inhuman response speed, automated command usage, and 24/7 activity. Utilizes a risk scoring system with configurable sensitivity levels and proactive scanning for accurate detection.</p>
                 <a href="#anti-selfbot" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -138,7 +138,7 @@
                     <i class="fas fa-user-check"></i>
                 </div>
                 <h3>Alt Account Detection</h3>
-                <p>Advanced detection of alternative accounts with account age analysis, similarity checking, and verification bypass options</p>
+                <p>Advanced detection of alternative accounts through minimum account age thresholds and suspicious criteria. Configurable punishment actions for detected alts, with options for verified members to bypass detection.</p>
                 <a href="#anti-alt" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -147,7 +147,7 @@
                     <i class="fas fa-filter"></i>
                 </div>
                 <h3>Message Filtering</h3>
-                <p>Comprehensive content filtering with custom word lists, regex support, invite link detection, and escalating punishments</p>
+                <p>Comprehensive content filtering with support for custom word lists and regex. Detects and acts upon invite links, excessive caps, and other unwanted content, with escalating punishments for violations.</p>
                 <a href="#message-filter" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -156,7 +156,7 @@
                     <i class="fas fa-lock"></i>
                 </div>
                 <h3>Server Lockdown</h3>
-                <p>Emergency protection with instant channel locking, permission management, and coordinated response capabilities</p>
+                <p>Emergency protection with instant channel locking, preventing message sending and managing permissions across the server. Useful for coordinated responses during active threats.</p>
                 <a href="#lockdown" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -165,7 +165,7 @@
                     <i class="fas fa-clipboard-list"></i>
                 </div>
                 <h3>Enhanced Logging</h3>
-                <p>Comprehensive activity tracking with detailed security logs, audit trail integration, and customizable log levels</p>
+                <p>Comprehensive activity tracking with detailed security logs for protection events, member joins/leaves, message edits/deletions, channel/role creation/deletion, bans/unbans, guild updates, and voice state changes. Features audit log integration, customizable log levels, real-time alerts, and extreme error handling with staff pings and owner DMs.</p>
                 <a href="#logging" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -174,7 +174,7 @@
                     <i class="fas fa-sliders-h"></i>
                 </div>
                 <h3>Advanced Configuration</h3>
-                <p>Fully customizable settings with backup/restore system, setup wizard, and cross-server configuration sync</p>
+                <p>Fully customizable settings with an interactive setup wizard for easy configuration. Includes a comprehensive backup and restore system, whitelist management for trusted users, protection status monitoring, and tools for cross-server configuration sync and bulk configuration. Also supports a trusted bots whitelist to prevent false positives.</p>
                 <a href="#customization" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
@@ -248,7 +248,7 @@
                 <div class="step-number">2</div>
                 <div class="step-content">
                     <h3>Run Setup Wizard</h3>
-                    <p>Use the interactive setup wizard for guided configuration</p>
+                    <p>Use the interactive setup wizard for guided configuration. This command will walk you through essential settings.</p>
                     <div class="code-block">
                         <code>/setup-wizard</code>
                     </div>
@@ -259,7 +259,7 @@
                 <div class="step-number">3</div>
                 <div class="step-content">
                     <h3>Configure Logging</h3>
-                    <p>Set up a secure logging channel for all protection events</p>
+                    <p>Set up a secure logging channel for all protection events. This is required for ALL protection features to work, as it provides critical audit trails.</p>
                     <div class="code-block">
                         <code>/setup-logging #security-logs</code>
                     </div>
@@ -270,7 +270,7 @@
                 <div class="step-number">4</div>
                 <div class="step-content">
                     <h3>Add Trusted Staff</h3>
-                    <p>Whitelist your administrators to prevent false positives</p>
+                    <p>Whitelist your administrators to prevent false positives. Only whitelisted users can make admin changes without triggering protection measures.</p>
                     <div class="code-block">
                         <code>/whitelist add @Admin</code>
                     </div>
@@ -281,7 +281,7 @@
                 <div class="step-number">5</div>
                 <div class="step-content">
                     <h3>Enable Protection</h3>
-                    <p>Activate all protection modules with recommended settings</p>
+                    <p>Activate all protection modules with recommended settings. You can fine-tune these later using their respective configuration commands.</p>
                     <div class="code-block">
                         <code>/antinuke-config enabled:true</code>
                         <code>/antiraid-config enabled:true</code>
@@ -301,15 +301,14 @@
                         <code>/protection-status</code>
                     </div>
                 </div>
-            </div>
 
             <div class="setup-step">
                 <div class="step-number">7</div>
                 <div class="step-content">
                     <h3>Create Backup</h3>
-                    <p>Save your configuration for easy restoration or transfer</p>
+                    <p>Save your configuration for easy restoration or transfer. This sends you a JSON file with all your settings. Store safely.</p>
                     <div class="code-block">
-                        <code>/config-backup</code>
+                        <code>/backup action:create</code>
                     </div>
                 </div>
             </div>
@@ -342,19 +341,35 @@
                 <div class="command-list">
                     <div class="command-item">
                         <div class="command-name">/setup-wizard</div>
-                        <div class="command-desc">Interactive setup wizard for complete bot configuration</div>
+                        <div class="command-desc">
+                            Interactive setup wizard for complete bot configuration. Guides you through setting up logging, protection levels, whitelisting administrators, and enabling protection modules.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/setup-logging</div>
-                        <div class="command-desc">Configure logging channel for all protection events</div>
+                        <div class="command-desc">
+                            Configure the dedicated logging channel for all protection events. This is crucial for monitoring and auditing bot actions.
+                            <br>
+                            **Arguments:**
+                            *   `channel`: The text channel to send logs to.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/whitelist</div>
-                        <div class="command-desc">Manage trusted users who can configure the bot</div>
+                        <div class="command-desc">
+                            Manage trusted users who can bypass protection and configure the bot. Whitelisting is essential to prevent false positives.
+                            <br>
+                            **Arguments:**
+                            *   `action`: `add-user`, `remove-user`, `add-role`, `remove-role`, or `list`.
+                            *   `user` (optional): The user to add or remove.
+                            *   `role` (optional): The role to add or remove.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/protection-status</div>
-                        <div class="command-desc">View comprehensive protection status and configuration</div>
+                        <div class="command-desc">
+                            View a comprehensive overview of all protection features and their current status. This command helps you ensure that all systems are active and properly configured.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -364,31 +379,109 @@
                 <div class="command-list">
                     <div class="command-item">
                         <div class="command-name">/antinuke-config</div>
-                        <div class="command-desc">Configure anti-nuke protection with advanced options</div>
+                        <div class="command-desc">
+                            Configure anti-nuke protection settings, including thresholds, punishments, and auto-restore. This command allows you to customize the bot's response to potential server nuking attempts.
+                            <br>
+                            **Arguments:**
+                            *   `enabled`: `true` or `false` to enable or disable the module.
+                            *   `channel_delete_threshold`: Number of channel deletions to trigger action.
+                            *   `role_delete_threshold`: Number of role deletions to trigger action.
+                            *   `channel_create_threshold`: Number of channel creations to trigger action.
+                            *   `role_create_threshold`: Number of role creations to trigger action.
+                            *   `name_change_threshold`: Number of name changes to trigger action.
+                            *   `punishment`: `ban` or `kick` to specify the punishment for detected nukers.
+                            *   `auto_restore`: `True` or `False` to enable or disable automatic restoration of deleted items.
+                            *   `webhook_protection`: `True` or `False` to enable or disable webhook protection.
+                            *   `invite_protection`: `True` or `False` to enable or disable invite protection.
+                            *   `emoji_protection`: `True` or `False` to enable or disable emoji protection.
+                            *   `sticker_protection`: `True` or `False` to enable or disable sticker protection.
+                            *   `thread_protection`: `True` or `False` to enable or disable thread protection.
+                            *   `server_settings_protection`: `True` or `False` to enable or disable server settings protection.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/antiraid-config</div>
-                        <div class="command-desc">Configure anti-raid protection and join monitoring</div>
+                        <div class="command-desc">
+                            Configure anti-raid protection settings, such as join rate, time window, and punishment. This command helps you manage and mitigate potential raids on your server.
+                            <br>
+                            **Arguments:**
+                            *   `enabled`: `true` or `false` to enable or disable the module.
+                            *   `join_rate`: Number of joins within the time window to trigger raid mode.
+                            *   `time_window`: Time window in seconds to monitor join rate.
+                            *   `punishment`: `ban` or `kick` to specify the punishment for detected raiders.
+                            *   `auto_lockdown`: `True` or `False` to enable or disable automatic lockdown during raids.
+                            *   `verification_boost`: `True` or `False` to enable or disable verification level boost during raids.
+                            *   `new_account_threshold`: Days to consider an account 'new'.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/antispam-config</div>
-                        <div class="command-desc">Configure anti-spam protection and rate limiting</div>
+                        <div class="command-desc">
+                            Configure anti-spam protection, including message thresholds, time windows, and duplicate content detection. This command allows you to customize the bot's response to spamming behavior.
+                            <br>
+                            **Arguments:**
+                            *   `enabled`: `true` or `false` to enable or disable the module.
+                            *   `message_threshold`: Number of messages within the time window to trigger action.
+                            *   `time_window`: Time window in seconds to monitor message rate.
+                            *   `punishment`: `ban`, `kick`, or `mute` to specify the punishment for detected spammers.
+                            *   `mute_duration`: Duration of mute in minutes (if punishment is mute).
+                            *   `duplicate_detection`: `True` or `False` to enable or disable duplicate message detection.
+                            *   `link_protection`: `True` or `False` to enable or disable suspicious link protection.
+                            *   `caps_protection`: `True` or `False` to enable or disable excessive caps protection.
+                            *   `emoji_spam_protection`: `True` or `False` to enable or disable emoji spam protection.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/antiselfbot-config</div>
-                        <div class="command-desc">Configure selfbot detection with behavioral analysis</div>
+                        <div class="command-desc">
+                            Configure selfbot detection settings, including sensitivity, risk thresholds, and punishment. This command allows you to customize the bot's response to potential selfbot activity.
+                            <br>
+                            **Arguments:**
+                            *   `enabled`: `true` or `false` to enable or disable the module.
+                            *   `sensitivity`: `low`, `medium`, or `high` to specify the detection sensitivity level.
+                            *   `punishment`: `ban` or `kick` to specify the punishment for detected selfbots.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/antialt-config</div>
-                        <div class="command-desc">Configure alt account detection and prevention</div>
+                        <div class="command-desc">
+                            Configure alt account detection settings, such as minimum account age and punishment. This command helps you manage and mitigate potential alt accounts joining your server.
+                            <br>
+                            **Arguments:**
+                            *   `enabled`: `true` or `false` to enable or disable the module.
+                            *   `min_account_age`: Minimum account age in days to allow joining.
+                            *   `punishment`: `ban` or `kick` to specify the punishment for detected alt accounts.
+                            *   `whitelist_verification`: `True` or `False` to allow verification for borderline cases instead of immediate punishment.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/messagefilter-config</div>
-                        <div class="command-desc">Configure advanced message filtering and content moderation</div>
+                        <div class="command-desc">
+                            Configure advanced message filtering rules, including custom word lists and link protection. This command allows you to customize the bot's response to unwanted content.
+                            <br>
+                            **Arguments:**
+                            *   `enabled`: `true` or `false` to enable or disable the module.
+                            *   `punishment`: `delete`, `mute`, `kick`, or `ban` to specify the punishment for detected violations.
+                            *    invite_filter: `True` or `False` to enable or disable invite filtering.
+                            *    link_filter: `True` or `False` to enable or disable link filtering.
+                            *    add_bad_word: Word to add to the bad words list.
+                            *    remove_bad_word: Word to remove from the bad words list.
+                            *    list_bad_words: `True` to show the current bad words list.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/antimention-config</div>
-                        <div class="command-desc">Configure mass mention protection settings</div>
+                        <div class="command-desc">
+                            Configure mass mention protection settings, including mention thresholds and punishment. This command helps you manage and mitigate potential mass mention spam.
+                            <br>
+                            **Arguments:**
+                            *   `enabled`: `true` or `false` to enable or disable the module.
+                            *   `mention_threshold`: Number of mentions to trigger action.
+                            *   `punishment`: `ban`, `kick`, or `mute` to specify the punishment for detected mass mentioners.
+                            *   `mute_duration`: Duration of mute in minutes (if punishment is mute).
+                            *   `role_mention_protection`: `True` or `False` to enable or disable role mention protection.
+                            *   `everyone_protection`: `True` or `False` to enable or disable @everyone/@here protection.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -398,11 +491,23 @@
                 <div class="command-list">
                     <div class="command-item">
                         <div class="command-name">/raid-mode</div>
-                        <div class="command-desc">Manually activate/deactivate raid protection mode</div>
+                        <div class="command-desc">
+                            Manually activate or deactivate raid protection mode for immediate server control. This command is useful during active raids.
+                            <br>
+                            **Arguments:**
+                            *   `action`: `activate` or `deactivate` to specify the action to perform.
+                            *   `reason` (optional): Reason for the action.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/lockdown</div>
-                        <div class="command-desc">Emergency server lockdown with instant channel protection</div>
+                        <div class="command-desc">
+                            Initiate an emergency server lockdown, instantly protecting all channels. This command is useful during severe attacks.
+                            <br>
+                            **Arguments:**
+                            *   `action`: `enable` or `disable` to specify the action to perform.
+                            *   `reason` (optional): Reason for the action.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -411,20 +516,58 @@
                 <h3>Configuration Management</h3>
                 <div class="command-list">
                     <div class="command-item">
-                        <div class="command-name">/config-backup</div>
-                        <div class="command-desc">Create comprehensive backup of all bot settings</div>
+                        <div class="command-name">/backup action:create</div>
+                        <div class="command-desc">
+                            Create a comprehensive JSON backup file of all bot settings and configurations. This command is essential for saving your current setup.
+                            <br>
+                            **Arguments:**
+                            *   `action`: Must be set to `create`.
+                        </div>
                     </div>
                     <div class="command-item">
-                        <div class="command-name">/config-restore</div>
-                        <div class="command-desc">Restore bot configuration from backup file</div>
+                        <div class="command-name">/backup action:restore</div>
+                        <div class="command-desc">
+                            Restore bot configuration from an uploaded backup JSON file. This command allows you to revert to a previous configuration.
+                            <br>
+                            **Arguments:**
+                            *   `action`: Must be set to `restore`.
+                        </div>
                     </div>
                     <div class="command-item">
-                        <div class="command-name">/config-export</div>
-                        <div class="command-desc">Export configuration for transfer to another server</div>
+                        <div class="command-name">/backup action:toggle_auto</div>
+                        <div class="command-desc">
+                            Enable or disable automatic daily backups for your server. This command ensures that your settings are regularly backed up.
+                            <br>
+                            **Arguments:**
+                            *   `action`: Must be set to `toggle_auto`.
+                        </div>
                     </div>
                     <div class="command-item">
-                        <div class="command-name">/config-reset</div>
-                        <div class="command-desc">Reset all configurations to default values</div>
+                        <div class="command-name">/backup action:status</div>
+                        <div class="command-desc">
+                            View the current backup status, including the last backup timestamp and auto-backup setting. This command provides information about your backup configuration.
+                            <br>
+                            **Arguments:**
+                            *   `action`: Must be set to `status`.
+                        </div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command-name">/backup action:delete_data</div>
+                        <div class="command-desc">
+                            Permanently delete all backup data stored for your server. This command is useful for removing sensitive information.
+                            <br>
+                            **Arguments:**
+                            *   `action`: Must be set to `delete_data`.
+                        </div>
+                    </div>
+                    <div class="command-item">
+                        <div class="command-name">/backup action:reset_triggered</div>
+                        <div class="command-desc">
+                            Reset the protection triggered status, allowing automatic backups to resume. This command is useful after a false positive.
+                            <br>
+                            **Arguments:**
+                            *   `action`: Must be set to `reset_triggered`.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -434,49 +577,45 @@
                 <div class="command-list">
                     <div class="command-item">
                         <div class="command-name">/errors</div>
-                        <div class="command-desc">Interactive troubleshooting guide for common issues</div>
+                        <div class="command-desc">
+                            Access an interactive troubleshooting guide for common bot issues and their fixes. This command provides step-by-step solutions to common problems.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/features</div>
-                        <div class="command-desc">Complete overview of all protection features</div>
+                        <div class="command-desc">
+                            View a complete overview of all available protection features and their capabilities. This command provides a summary of the bot's functionalities.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/nuke-help</div>
-                        <div class="command-desc">Detailed help for anti-nuke configuration</div>
+                        <div class="command-desc">
+                            Get detailed help and configuration guidance specifically for anti-nuke protection. This command provides information about the anti-nuke module.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/spam-help</div>
-                        <div class="command-desc">Detailed help for anti-spam configuration</div>
+                        <div class="command-desc">
+                            Get detailed help and configuration guidance specifically for anti-spam protection. This command provides information about the anti-spam module.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/raid-help</div>
-                        <div class="command-desc">Detailed help for anti-raid configuration</div>
+                        <div class="command-desc">
+                            Get detailed help and configuration guidance specifically for anti-raid protection. This command provides information about the anti-raid module.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/selfbot-help</div>
-                        <div class="command-desc">Detailed help for selfbot detection configuration</div>
+                        <div class="command-desc">
+                            Get detailed help and configuration guidance specifically for anti-selfbot detection. This command provides information about the anti-selfbot module.
+                        </div>
                     </div>
                     <div class="command-item">
                         <div class="command-name">/config-help</div>
-                        <div class="command-desc">Comprehensive configuration and backup guidance</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="command-category">
-                <h3>Monitoring & Analytics</h3>
-                <div class="command-list">
-                    <div class="command-item">
-                        <div class="command-name">/security-stats</div>
-                        <div class="command-desc">View detailed security statistics and trends</div>
-                    </div>
-                    <div class="command-item">
-                        <div class="command-name">/threat-report</div>
-                        <div class="command-desc">Generate comprehensive threat analysis report</div>
-                    </div>
-                    <div class="command-item">
-                        <div class="command-name">/activity-monitor</div>
-                        <div class="command-desc">Real-time server activity monitoring dashboard</div>
+                        <div class="command-desc">
+                            Get comprehensive guidance on bot configuration management, including backups and settings. This command provides information about configuration management.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -499,15 +638,17 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Anti Nuke Bot V5 introduces several major new features:</p>
+                    <p>Anti Nuke Bot V5 introduces several major new features and improvements:</p>
                     <ul>
-                        <li><strong>Anti-Selfbot Detection:</strong> Advanced behavioral analysis to detect automated accounts</li>
-                        <li><strong>Enhanced Alt Detection:</strong> Improved algorithms for identifying alternative accounts</li>
-                        <li><strong>Advanced Message Filtering:</strong> Comprehensive content moderation with regex support</li>
-                        <li><strong>Interactive Setup Wizard:</strong> Guided configuration for easy setup</li>
-                        <li><strong>Comprehensive Help System:</strong> Interactive troubleshooting and detailed guides</li>
-                        <li><strong>Enhanced Logging:</strong> More detailed security logs and analytics</li>
-                        <li><strong>Improved Performance:</strong> Faster detection and response times</li>
+                        <li><strong>Anti-Selfbot Detection:</strong> Advanced behavioral analysis to detect automated accounts.</li>
+                        <li><strong>Enhanced Alt Detection:</strong> Improved algorithms for identifying alternative accounts.</li>
+                        <li><strong>Advanced Message Filtering:</strong> Comprehensive content moderation with regex support, link, image, and emoji spam prevention.</li>
+                        <li><strong>Interactive Setup Wizard:</strong> Guided configuration for easy setup with recommendations.</li>
+                        <li><strong>Comprehensive Help System:</strong> Interactive troubleshooting via <code>/errors</code> and detailed feature-specific guides.</li>
+                        <li><strong>Enhanced Logging:</strong> More detailed security logs, including audit log integration, member joins/leaves, message edits/deletions, channel/role changes, bans/unbans, guild updates, and voice state changes.</li>
+                        <li><strong>Improved Performance:</strong> Faster detection and response times with new burst detection for rapid attacks.</li>
+                        <li><strong>Expanded Anti-Nuke:</strong> Now includes Webhook, Invite, Emoji, and Sticker protection.</li>
+                        <li><strong>Trusted Bots Whitelist:</strong> Prevents false positives from other legitimate bots.</li>
                     </ul>
                 </div>
             </div>
@@ -518,11 +659,11 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Our selfbot detection system uses advanced behavioral analysis with multiple detection factors. The accuracy depends on the sensitivity level:</p>
+                    <p>Our selfbot detection system uses advanced behavioral analysis with multiple detection factors like message patterns, response speed, and activity patterns. The accuracy depends on the sensitivity level you configure:</p>
                     <ul>
-                        <li><strong>Low Sensitivity:</strong> ~95% accuracy, minimal false positives</li>
-                        <li><strong>Medium Sensitivity:</strong> ~90% accuracy, balanced detection</li>
-                        <li><strong>High Sensitivity:</strong> ~85% accuracy, catches more sophisticated selfbots</li>
+                        <li><strong>Low Sensitivity:</strong> Fewer false positives, may miss sophisticated selfbots. Good for servers with very active users.</li>
+                        <li><strong>Medium Sensitivity (Recommended):</strong> Balanced detection with a reasonable false positive rate. Ideal for most servers.</li>
+                        <li><strong>High Sensitivity:</strong> Catches more selfbots but has a higher false positive rate, requiring more manual review.</li>
                     </ul>
                     <p>We recommend starting with medium sensitivity and adjusting based on your server's needs. Always manually verify detections before taking permanent action.</p>
                 </div>
@@ -534,33 +675,34 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>All protection features require proper setup before activation. Use our interactive troubleshooting:</p>
+                    <p>All protection features require proper setup and permissions before activation. Use our interactive troubleshooting tools:</p>
                     <ol>
-                        <li>Run <code>/setup-wizard</code> for guided configuration</li>
-                        <li>Ensure logging is set up: <code>/setup-logging #channel</code></li>
-                        <li>Add trusted admins: <code>/whitelist add @Admin</code></li>
-                        <li>Enable features individually with their config commands</li>
-                        <li>Verify setup: <code>/protection-status</code></li>
-                        <li>For specific issues: <code>/errors</code></li>
+                        <li>Run <code>/setup-wizard</code> for guided configuration.</li>
+                        <li>Ensure logging is set up: <code>/setup-logging #channel</code>. This is critical for all features.</li>
+                        <li>Add trusted admins: <code>/whitelist add @Admin</code>. Non-whitelisted admins will trigger protection.</li>
+                        <li>Enable features individually with their config commands (e.g., <code>/antinuke-config enabled:true</code>).</li>
+                        <li>Verify the bot has all <a href="#faq-permissions">required permissions</a> and its role is at the very top of your server's role list.</li>
+                        <li>Check overall setup status: <code>/protection-status</code></li>
+                        <li>For specific issues, use <code>/errors</code></li>
                     </ol>
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">
+                <div class="faq-question" id="faq-permissions">
                     <h3>What permissions does the bot need?</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
-                <div class="faq-answer">
-                    <p>For optimal protection, Anti Nuke Bot V5 requires Administrator permissions. This ensures:</p>
+                 <div class="faq-answer">
+                    <p>For optimal protection and functionality, Anti Nuke Bot V5 highly recommends and ideally requires **Administrator** permissions. This ensures:</p>
                     <ul>
-                        <li>Complete access to monitor all server activities</li>
-                        <li>Ability to reverse malicious actions instantly</li>
-                        <li>Permission to manage roles, channels, and members</li>
-                        <li>Access to audit logs for comprehensive monitoring</li>
-                        <li>No permission conflicts that could compromise protection</li>
+                        <li>Complete access to monitor all server activities and audit logs.</li>
+                        <li>Ability to reverse malicious actions instantly (e.g., deleting channels, recreating roles).</li>
+                        <li>Permission to manage roles, channels, members (kick, ban, timeout), and webhooks.</li>
+                        <li>No permission conflicts that could compromise protection.</li>
                     </ul>
-                    <p><strong>Important:</strong> The bot's role must be positioned at the top of your role hierarchy to manage all other roles effectively.</p>
+                    <p><strong>Critical Importance of Role Position:</strong> The bot's role **must be positioned at the very top** of your server's role hierarchy (just below the server owner) to effectively manage and protect all other roles and members.</p>
+                    <p>You can use the in-bot command <code>/errors</code> and select "Check Permissions" to get a detailed report on missing permissions.</p>
                 </div>
             </div>
 
@@ -570,14 +712,14 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>To minimize false positives:</p>
+                    <p>To minimize false positives and ensure legitimate actions are not flagged:</p>
                     <ul>
-                        <li><strong>Whitelist trusted staff:</strong> Add all administrators and moderators</li>
-                        <li><strong>Adjust sensitivity:</strong> Start with lower sensitivity and increase gradually</li>
-                        <li><strong>Configure thresholds:</strong> Set appropriate limits for your server size</li>
-                        <li><strong>Use warning mode:</strong> Start with warnings before implementing punishments</li>
-                        <li><strong>Monitor logs:</strong> Review detection logs to identify patterns</li>
-                        <li><strong>Regular review:</strong> Periodically review and adjust settings</li>
+                        <li><strong>Whitelist trusted staff:</strong> Use <code>/whitelist add @User</code> for all administrators and moderators. The server owner is automatically whitelisted.</li>
+                        <li><strong>Adjust sensitivity:</strong> For features like Anti-Selfbot, start with lower sensitivity (e.g., <code>/antiselfbot-config sensitivity:low</code>) and increase gradually as needed.</li>
+                        <li><strong>Configure thresholds:</strong> Set appropriate limits for your server size and activity level. For example, increase <code>message_threshold</code> for Anti-Spam or <code>join_rate</code> for Anti-Raid.</li>
+                        <li><strong>Use warning mode:</strong> Some features allow a "warn" punishment first, giving you time to manually review before implementing harsher actions.</li>
+                        <li><strong>Monitor logs:</strong> Regularly review detection logs in your configured logging channel to identify patterns and adjust settings.</li>
+                        <li><strong>Regular review:</strong> Periodically use the respective <code>-config</code> commands or <code>/protection-status</code> to review and adjust settings.</li>
                     </ul>
                 </div>
             </div>
@@ -588,16 +730,16 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes! V5 offers extensive customization options:</p>
+                    <p>Yes! Anti Nuke Bot V5 offers extensive customization options for its detection algorithms and responses:</p>
                     <ul>
-                        <li><strong>Sensitivity Levels:</strong> Adjust detection sensitivity for each module</li>
-                        <li><strong>Custom Thresholds:</strong> Set specific limits for your server's needs</li>
-                        <li><strong>Punishment Escalation:</strong> Configure progressive punishment systems</li>
-                        <li><strong>Time Windows:</strong> Adjust monitoring periods for different activities</li>
-                        <li><strong>Whitelist Rules:</strong> Create complex whitelist configurations</li>
-                        <li><strong>Custom Filters:</strong> Add server-specific content filters</li>
+                        <li><strong>Sensitivity Levels:</strong> Adjust detection sensitivity for each module (e.g., low/medium/high for Anti-Selfbot).</li>
+                        <li><strong>Custom Thresholds:</strong> Set specific limits for message rates, join rates, channel/role deletions, and more, tailored to your server's needs.</li>
+                        <li><strong>Punishment Escalation:</strong> Configure progressive punishment systems, from warnings and mutes to kicks and bans.</li>
+                        <li><strong>Time Windows:</strong> Adjust monitoring periods for different activities to catch rapid bursts or slower, coordinated attacks.</li>
+                        <li><strong>Whitelist Rules:</strong> Create complex whitelist configurations for users, roles, or even specific channels.</li>
+                        <li><strong>Custom Filters:</strong> Add server-specific content filters for messages, including custom words and regex patterns.</li>
                     </ul>
-                    <p>Use the respective config commands or <code>/setup-wizard</code> for guided customization.</p>
+                    <p>Use the respective <code>-config</code> commands (e.g., <code>/antinuke-config</code>, <code>/antispam-config</code>) or the interactive <code>/setup-wizard</code> for guided customization.</p>
                 </div>
             </div>
 
@@ -607,14 +749,14 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>V5 includes comprehensive help resources:</p>
+                    <p>V5 includes comprehensive help resources to assist you:</p>
                     <ul>
-                        <li><strong>Interactive Troubleshooting:</strong> <code>/errors</code> for step-by-step problem solving</li>
-                        <li><strong>Feature-Specific Help:</strong> Commands like <code>/nuke-help</code>, <code>/spam-help</code>, etc.</li>
-                        <li><strong>Setup Assistance:</strong> <code>/setup-wizard</code> for guided configuration</li>
-                        <li><strong>Status Checking:</strong> <code>/protection-status</code> to identify issues</li>
-                        <li><strong>Support Server:</strong> Join our Discord for live assistance</li>
-                        <li><strong>Documentation:</strong> Comprehensive guides and tutorials</li>
+                        <li><strong>Interactive Troubleshooting:</strong> Use <code>/errors</code> for a step-by-step problem-solving guide for common issues.</li>
+                        <li><strong>Feature-Specific Help:</strong> Commands like <code>/nuke-help</code>, <code>/spam-help</code>, <code>/raid-help</code>, <code>/selfbot-help</code>, and <code>/config-help</code> provide detailed configuration guides.</li>
+                        <li><strong>Setup Assistance:</strong> The <code>/setup-wizard</code> command offers guided configuration for new servers or re-configuration.</li>
+                        <li><strong>Status Checking:</strong> Use <code>/protection-status</code> to quickly identify which features are active and what needs attention.</li>
+                        <li><strong>Support Server:</strong> Join our Discord for live assistance from our team and community.</li>
+                        <li><strong>Documentation:</strong> Refer to our comprehensive online guides and tutorials for in-depth information.</li>
                     </ul>
                 </div>
             </div>
@@ -682,6 +824,11 @@
                     <code>/errors</code>
                     <code>/setup-wizard</code>
                     <code>/features</code>
+                    <code>/nuke-help</code>
+                    <code>/spam-help</code>
+                    <code>/raid-help</code>
+                    <code>/selfbot-help</code>
+                    <code>/config-help</code>
                 </div>
             </div>
 
